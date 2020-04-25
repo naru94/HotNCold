@@ -1,0 +1,4238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="CalibrationBlurWindow">
+    <property name="width_request">480</property>
+    <property name="height_request">800</property>
+    <property name="can_focus">False</property>
+    <property name="type">popup</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="CalibrationBlurWlayout">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkImage" id="CalibrationBlur">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Calibration_Blur.png</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="CalibrationSWindow">
+    <property name="width_request">480</property>
+    <property name="height_request">800</property>
+    <property name="can_focus">False</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="CalibrationSWlayout">
+        <property name="width_request">480</property>
+        <property name="height_request">800</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="SetCtrlOffsetUp">
+            <property name="label" translatable="yes">SetCtrlOffsetUp</property>
+            <property name="width_request">184</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_SetCtrlOffsetUp_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">143</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="SetCtrlOffsetDwn">
+            <property name="label" translatable="yes">SetCtrlOffsetDwn</property>
+            <property name="width_request">184</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_SetCtrlOffsetDwn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">217</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="SetCtrlOutputUp">
+            <property name="label" translatable="yes">SetCtrlOutputUp</property>
+            <property name="width_request">184</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_SetCtrlOutputUp_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">341</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="SetCtrlOutputDwn">
+            <property name="label" translatable="yes">SetCtrlOutputDwn</property>
+            <property name="width_request">184</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_SetCtrlOutputDwn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">415</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="SetTempOffsetUp">
+            <property name="label" translatable="yes">SetTempOffsetUp</property>
+            <property name="width_request">184</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_SetTempOffsetUp_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">541</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="SetTempOffsetDwn">
+            <property name="label" translatable="yes">SetTempOffsetDwn</property>
+            <property name="width_request">184</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_SetTempOffsetDwn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">615</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="CalibrationExitButton">
+            <property name="label" translatable="yes">button</property>
+            <property name="width_request">199</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CalibrationExitButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">250</property>
+            <property name="y">707</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Background3">
+            <property name="width_request">480</property>
+            <property name="height_request">800</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Calibration_BG.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage" id="XLJetHeader3">
+            <property name="width_request">208</property>
+            <property name="height_request">59</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">XLJET_logo_Home.png</property>
+          </object>
+          <packing>
+            <property name="x">136</property>
+            <property name="y">18</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="ControlOffsetBox">
+            <property name="width_request">420</property>
+            <property name="height_request">202</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">ControlOffset_Box.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">100</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetUpLabel">
+            <property name="width_request">140</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Calibration_Roller_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">45</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetDwnLabel">
+            <property name="width_request">189</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Calibration_Roller_Dwn.png</property>
+          </object>
+          <packing>
+            <property name="x">45</property>
+            <property name="y">239</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetUpImg">
+            <property name="width_request">184</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Edit_Button_Calibration.png</property>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">140</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetDwnImg">
+            <property name="width_request">184</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Edit_Button_Calibration.png</property>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">214</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="ControlOutputBox">
+            <property name="width_request">420</property>
+            <property name="height_request">202</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">ControlOutput_Box.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">298</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputUpLabel">
+            <property name="width_request">140</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Calibration_Roller_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">45</property>
+            <property name="y">362</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputDwnLabel">
+            <property name="width_request">189</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Calibration_Roller_Dwn.png</property>
+          </object>
+          <packing>
+            <property name="x">43</property>
+            <property name="y">437</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputUpImg">
+            <property name="width_request">184</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Edit_Button_Calibration.png</property>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">338</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputDwnImg">
+            <property name="width_request">184</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Edit_Button_Calibration.png</property>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">412</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetBox">
+            <property name="width_request">420</property>
+            <property name="height_request">202</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">TempOffset_Calibration.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">495</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetUpLabel">
+            <property name="width_request">140</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Calibration_Roller_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">45</property>
+            <property name="y">562</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetDwnLabel">
+            <property name="width_request">189</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Calibration_Roller_Dwn.png</property>
+          </object>
+          <packing>
+            <property name="x">43</property>
+            <property name="y">637</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetUpImg">
+            <property name="width_request">184</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Edit_Button_Calibration.png</property>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">538</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TmpOffsetDwnEntry">
+            <property name="width_request">184</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Edit_Button_Calibration.png</property>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">612</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CalibrationExitImage">
+            <property name="width_request">199</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Exit_Calibration_Button.png</property>
+          </object>
+          <packing>
+            <property name="x">250</property>
+            <property name="y">707</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="SetCtrlOffsetDisp1">
+            <property name="width_request">105</property>
+            <property name="height_request">65</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">0</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 16"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">143</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="SetCtrlOffsetDisp2">
+            <property name="width_request">105</property>
+            <property name="height_request">65</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">20</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 16"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">214</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="SetCtrlOutputDisp1">
+            <property name="width_request">105</property>
+            <property name="height_request">65</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">10</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 16"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">338</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="SetCtrlOutputDisp2">
+            <property name="width_request">105</property>
+            <property name="height_request">65</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">100</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 16"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">412</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="SetTempOffsetDisp1">
+            <property name="width_request">105</property>
+            <property name="height_request">65</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">-25</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 16"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">538</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="SetTempOffsetDisp2">
+            <property name="width_request">105</property>
+            <property name="height_request">65</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">25</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 16"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">251</property>
+            <property name="y">612</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="CtrlOffset1">
+    <property name="can_focus">False</property>
+    <property name="type">popup</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="type_hint">dialog</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="CtrlOffsetLayout1">
+        <property name="width_request">32</property>
+        <property name="height_request">32</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="CtrlOffsetMinusButton1">
+            <property name="label" translatable="yes">-</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOffsetMinusButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="CtrlOffsetCancelButton1">
+            <property name="label" translatable="yes">button</property>
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOffsetCancelButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="CtrlOffsetOKButton1">
+            <property name="label" translatable="yes">OK</property>
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOffsetOKButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="CtrlOffsetPlusButton1">
+            <property name="label" translatable="yes">+</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOffsetPlusButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetPopUpBG1">
+            <property name="width_request">397</property>
+            <property name="height_request">255</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">PopUp_BG.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetUp1">
+            <property name="width_request">189</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">RollerUp_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">102</property>
+            <property name="y">27</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetPop1">
+            <property name="width_request">198</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">ControlOffset.png</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">58</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetMinusDown1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetMinusUp1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetBox1">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">DataBox_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetPlusDown1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetPlusUp1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetOK1">
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">OK_Button_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetCancel1">
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">CancelButton_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="CtrlOffsetEntry1">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">30</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 24"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="CtrlOffset2">
+    <property name="can_focus">False</property>
+    <property name="type">popup</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="type_hint">dialog</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="CtrlOffsetLayout2">
+        <property name="width_request">32</property>
+        <property name="height_request">32</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="CtrlOffsetMinusButton2">
+            <property name="label" translatable="yes">-</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOffsetMinusButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="CtrlOffsetCancelButton2">
+            <property name="label" translatable="yes">button</property>
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOffsetCancelButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="CtrlOffsetOKButton2">
+            <property name="label" translatable="yes">OK</property>
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOffsetOKButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="CtrlOffsetPlusButton2">
+            <property name="label" translatable="yes">+</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOffsetPlusButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetPopUpBG2">
+            <property name="width_request">397</property>
+            <property name="height_request">255</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">PopUp_BG.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetUp2">
+            <property name="width_request">189</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">RollorDown_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">102</property>
+            <property name="y">27</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetPop2">
+            <property name="width_request">198</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">ControlOffset.png</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">58</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetMinusDown2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetMinusUp2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetBox2">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">DataBox_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetPlusDown2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetPlusUp2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetOK2">
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">OK_Button_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOffsetCancel2">
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">CancelButton_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="CtrlOffsetEntry2">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">30</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 24"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="CtrlOutput1">
+    <property name="can_focus">False</property>
+    <property name="type">popup</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="type_hint">dialog</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="CtrlOutputLayout1">
+        <property name="width_request">32</property>
+        <property name="height_request">32</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="CtrlOutputMinusButton1">
+            <property name="label" translatable="yes">-</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOutputMinusButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="CtrlOutputCancelButton1">
+            <property name="label" translatable="yes">button</property>
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOutputCancelButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="CtrlOutputOKButton1">
+            <property name="label" translatable="yes">OK</property>
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOutputOKButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="CtrlOutputPlusButton1">
+            <property name="label" translatable="yes">+</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOutputPlusButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputPopUpBG1">
+            <property name="width_request">397</property>
+            <property name="height_request">255</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">PopUp_BG.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputUp1">
+            <property name="width_request">189</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">RollerUp_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">102</property>
+            <property name="y">27</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputPop1">
+            <property name="width_request">198</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">ControlOutput.png</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">58</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputMinusDown1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputMinusUp1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputBox1">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">DataBox_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputPlusDown1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputPlusUp1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputOK1">
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">OK_Button_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputCancel1">
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">CancelButton_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="CtrlOutputEntry1">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">30</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 24"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="CtrlOutput2">
+    <property name="can_focus">False</property>
+    <property name="type">popup</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="type_hint">dialog</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="CtrlOutputLayout2">
+        <property name="width_request">32</property>
+        <property name="height_request">32</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="CtrlOutputMinusButton2">
+            <property name="label" translatable="yes">-</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOutputMinusButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="CtrlOutputCancelButton2">
+            <property name="label" translatable="yes">button</property>
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOutputCancelButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="CtrlOutputOKButton2">
+            <property name="label" translatable="yes">OK</property>
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOutputOKButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="CtrlOutputPlusButton2">
+            <property name="label" translatable="yes">+</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CtrlOutputPlusButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputPopUpBG2">
+            <property name="width_request">397</property>
+            <property name="height_request">255</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">PopUp_BG.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputUp2">
+            <property name="width_request">189</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">RollorDown_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">102</property>
+            <property name="y">27</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputPop2">
+            <property name="width_request">198</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">ControlOutput.png</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">58</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputMinusDown2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputMinusUp2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputBox2">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">DataBox_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputPlusDown2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputPlusUp2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputOK2">
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">OK_Button_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CtrlOutputCancel2">
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">CancelButton_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="CtrlOutputEntry2">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">30</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 24"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="DeviceStatusWindow">
+    <property name="width_request">480</property>
+    <property name="height_request">800</property>
+    <property name="can_focus">False</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="DeviceStatusWlayout">
+        <property name="width_request">32</property>
+        <property name="height_request">32</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="DeviceStatusExitButton">
+            <property name="label" translatable="yes">button</property>
+            <property name="width_request">199</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_DeviceStatusExitButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">250</property>
+            <property name="y">707</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Background4">
+            <property name="width_request">480</property>
+            <property name="height_request">800</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">DeviceStatus.jpg</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage" id="XLJetHeader4">
+            <property name="width_request">208</property>
+            <property name="height_request">59</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">XLJET_logo_Home.png</property>
+          </object>
+          <packing>
+            <property name="x">136</property>
+            <property name="y">18</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="SystemWarningBox">
+            <property name="width_request">420</property>
+            <property name="height_request">168</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">SystemWarning.png</property>
+          </object>
+          <packing>
+            <property name="x">28</property>
+            <property name="y">116</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="AmbientTempBox">
+            <property name="width_request">420</property>
+            <property name="height_request">202</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">AmbientTemp_Box.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">298</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="AmbientTempUpLabel">
+            <property name="width_request">140</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Calibration_Roller_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">59</property>
+            <property name="y">368</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="AmbientTempDownLabel">
+            <property name="width_request">189</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Calibration_Roller_Dwn.png</property>
+          </object>
+          <packing>
+            <property name="x">57</property>
+            <property name="y">435</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="AmbientTmpUpImg">
+            <property name="width_request">157</property>
+            <property name="height_request">55</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">DataBox.png</property>
+          </object>
+          <packing>
+            <property name="x">273</property>
+            <property name="y">349</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="AmbientTmpDwnImg">
+            <property name="width_request">157</property>
+            <property name="height_request">55</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">DataBox.png</property>
+          </object>
+          <packing>
+            <property name="x">273</property>
+            <property name="y">417</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="DeviceTypeBox">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">DeviceType_Box.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">510</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="SystemWarningDisp">
+            <property name="width_request">418</property>
+            <property name="height_request">78</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">No System Warning</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 16"/>
+              <attribute name="foreground" value="#fcfce9e94f4f"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">30</property>
+            <property name="y">177</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="AmbientTempDisp1">
+            <property name="width_request">157</property>
+            <property name="height_request">55</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">25</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 16"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">273</property>
+            <property name="y">349</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="AmbientTempDisp2">
+            <property name="width_request">157</property>
+            <property name="height_request">55</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">25</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 16"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">273</property>
+            <property name="y">417</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="DeviceTypeDisp">
+            <property name="width_request">418</property>
+            <property name="height_request">130</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Twin Rubber </property>
+            <attributes>
+              <attribute name="font-desc" value="Segoe UI Bold 22"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">30</property>
+            <property name="y">530</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="EmergencyWindow">
+    <property name="width_request">480</property>
+    <property name="height_request">800</property>
+    <property name="can_focus">False</property>
+    <property name="type">popup</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="EmergencyWlayout">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkImage" id="EmergencyImg">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Emergency.png</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="HomeBlurWindow">
+    <property name="width_request">480</property>
+    <property name="height_request">800</property>
+    <property name="can_focus">False</property>
+    <property name="type">popup</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="HomeBlurWlayout">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkImage" id="HomeBlur">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Home_Blur.png</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="HomeWindow">
+    <property name="width_request">480</property>
+    <property name="height_request">800</property>
+    <property name="can_focus">False</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="default_width">480</property>
+    <property name="default_height">800</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="HomeWlayout">
+        <property name="width_request">480</property>
+        <property name="height_request">800</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="SetTempButton1">
+            <property name="width_request">171</property>
+            <property name="height_request">61</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_SetTempButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">45</property>
+            <property name="y">208</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="SetTempButton2">
+            <property name="label" translatable="yes">
+</property>
+            <property name="width_request">171</property>
+            <property name="height_request">61</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_SetTempButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">265</property>
+            <property name="y">208</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="HeaterToggle1">
+            <property name="label" translatable="yes">Heater1</property>
+            <property name="width_request">179</property>
+            <property name="height_request">67</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="relief">none</property>
+            <signal name="toggled" handler="on_HeaterToggle1_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">41</property>
+            <property name="y">275</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="HeaterToggle2">
+            <property name="label" translatable="yes">Heater2</property>
+            <property name="width_request">179</property>
+            <property name="height_request">67</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="relief">none</property>
+            <signal name="toggled" handler="on_HeaterToggle2_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">260</property>
+            <property name="y">275</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="MinusButton">
+            <property name="label" translatable="yes">minus</property>
+            <property name="width_request">102</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_MinusButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">385</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="PlusButton">
+            <property name="label" translatable="yes">plus</property>
+            <property name="width_request">102</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_PlusButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">348</property>
+            <property name="y">385</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="HandSafetyToggle">
+            <property name="label" translatable="yes">HandSafety</property>
+            <property name="width_request">125</property>
+            <property name="height_request">104</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="relief">none</property>
+            <signal name="toggled" handler="on_HandSafetyToggle_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">464</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="SettingsButton">
+            <property name="label" translatable="yes">Settings</property>
+            <property name="width_request">125</property>
+            <property name="height_request">104</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_SettingsButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">325</property>
+            <property name="y">464</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="MotorRButton">
+            <property name="label" translatable="yes">MotorR</property>
+            <property name="width_request">125</property>
+            <property name="height_request">104</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_MotorRButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">577</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="RollerDownButton">
+            <property name="label" translatable="yes">RollerDown</property>
+            <property name="width_request">152</property>
+            <property name="height_request">104</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="relief">none</property>
+            <signal name="toggled" handler="on_RollerDownButton_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">164</property>
+            <property name="y">577</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="RollerUpButton">
+            <property name="label" translatable="yes">RollerUp</property>
+            <property name="width_request">152</property>
+            <property name="height_request">104</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="relief">none</property>
+            <signal name="toggled" handler="on_RollerUpButton_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">164</property>
+            <property name="y">464</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="MotorFButton">
+            <property name="label" translatable="yes">MotorF</property>
+            <property name="width_request">125</property>
+            <property name="height_request">104</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_MotorFButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">325</property>
+            <property name="y">577</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="StartButton">
+            <property name="label" translatable="yes">Start</property>
+            <property name="width_request">421</property>
+            <property name="height_request">84</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="relief">none</property>
+            <signal name="toggled" handler="on_StartButton_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">692</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Background1">
+            <property name="width_request">480</property>
+            <property name="height_request">800</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Background.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage" id="TimeIcon1">
+            <property name="width_request">26</property>
+            <property name="height_request">26</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Clock-icon.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">45</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="XLJetHeader1">
+            <property name="width_request">208</property>
+            <property name="height_request">59</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">XLJET_logo_Home.png</property>
+          </object>
+          <packing>
+            <property name="x">136</property>
+            <property name="y">18</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="DateIcon1">
+            <property name="width_request">24</property>
+            <property name="height_request">26</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Calender_icon.png</property>
+          </object>
+          <packing>
+            <property name="x">365</property>
+            <property name="y">42</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="RollerFrame1">
+            <property name="width_request">202</property>
+            <property name="height_request">257</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Roller_Content_Frame.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">99</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="RollerFrame2">
+            <property name="width_request">202</property>
+            <property name="height_request">257</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Roller_Content_Frame.png</property>
+          </object>
+          <packing>
+            <property name="x">249</property>
+            <property name="y">99</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="RollerText1">
+            <property name="width_request">88</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Roller1_Text.png</property>
+          </object>
+          <packing>
+            <property name="x">73</property>
+            <property name="y">105</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="RollerText2">
+            <property name="width_request">88</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Roller2_Text.png</property>
+          </object>
+          <packing>
+            <property name="x">270</property>
+            <property name="y">105</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="DegreeBox1">
+            <property name="width_request">179</property>
+            <property name="height_request">68</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Actual_text_box.png</property>
+          </object>
+          <packing>
+            <property name="x">41</property>
+            <property name="y">126</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="DegreeBox2">
+            <property name="width_request">179</property>
+            <property name="height_request">68</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Actual_text_box.png</property>
+          </object>
+          <packing>
+            <property name="x">261</property>
+            <property name="y">126</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="SetBox1">
+            <property name="width_request">179</property>
+            <property name="height_request">68</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Set_text_box.png</property>
+          </object>
+          <packing>
+            <property name="x">41</property>
+            <property name="y">202</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="SetBox2">
+            <property name="width_request">179</property>
+            <property name="height_request">68</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Set_text_box.png</property>
+          </object>
+          <packing>
+            <property name="x">261</property>
+            <property name="y">202</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="RollerHeaterON1">
+            <property name="width_request">179</property>
+            <property name="height_request">67</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Roller_Heater_ON.png</property>
+          </object>
+          <packing>
+            <property name="x">41</property>
+            <property name="y">280</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="RollerHeaterOFF1">
+            <property name="width_request">179</property>
+            <property name="height_request">67</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Roller_Heater_OFF.png</property>
+          </object>
+          <packing>
+            <property name="x">41</property>
+            <property name="y">280</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="RollerHeaterON2">
+            <property name="width_request">179</property>
+            <property name="height_request">67</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Roller_Heater_ON.png</property>
+          </object>
+          <packing>
+            <property name="x">260</property>
+            <property name="y">280</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="RollerHeaterOFF2">
+            <property name="width_request">179</property>
+            <property name="height_request">67</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Roller_Heater_OFF.png</property>
+          </object>
+          <packing>
+            <property name="x">260</property>
+            <property name="y">280</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="SpeedText">
+            <property name="width_request">62</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Speed_Text.png</property>
+          </object>
+          <packing>
+            <property name="x">208</property>
+            <property name="y">366</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="SpeedMinusDown">
+            <property name="width_request">102</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Speed_Minus_Down.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">385</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="SpeedMinusUp">
+            <property name="width_request">102</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Speed_Minus_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">385</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="SpeedDataBox">
+            <property name="width_request">179</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Speed_Data-Box.png</property>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">385</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="SpeedPlusDown">
+            <property name="width_request">102</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Speed_Plus_Down.png</property>
+          </object>
+          <packing>
+            <property name="x">348</property>
+            <property name="y">385</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="SpeedPlusUp">
+            <property name="width_request">102</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Speed_Plus_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">348</property>
+            <property name="y">385</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="HandSafetyON">
+            <property name="width_request">150</property>
+            <property name="height_request">104</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Hand_Safety_ON.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">464</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="HandSafetyDisable">
+            <property name="width_request">150</property>
+            <property name="height_request">104</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Hand_Safety_Disable.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">464</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="HandSafetyOFF">
+            <property name="width_request">150</property>
+            <property name="height_request">104</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Hand_Safety_OFF.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">464</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="RollerUpON">
+            <property name="width_request">162</property>
+            <property name="height_request">104</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Roller_Up_ON.png</property>
+          </object>
+          <packing>
+            <property name="x">159</property>
+            <property name="y">464</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="RollerUpOFF">
+            <property name="width_request">162</property>
+            <property name="height_request">104</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Roller_Up_OFF.png</property>
+          </object>
+          <packing>
+            <property name="x">159</property>
+            <property name="y">464</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="SettingButtonUp">
+            <property name="width_request">150</property>
+            <property name="height_request">104</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Setting-Button_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">464</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="SettingButtonDown">
+            <property name="width_request">150</property>
+            <property name="height_request">104</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Setting-Button_Down.png</property>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">464</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="ReverseON">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Reverse_ON.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">577</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="ReverseOFF">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Reverse_OFF.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">577</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="RollerDownON">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Roller_Down_ON.png</property>
+          </object>
+          <packing>
+            <property name="x">159</property>
+            <property name="y">577</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="RollerDownOFF">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Roller_Down_OFF.png</property>
+          </object>
+          <packing>
+            <property name="x">159</property>
+            <property name="y">577</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="ForwardOFF">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Forward_OFF.png</property>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">577</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="ForwardON">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Forward_ON.png</property>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">577</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="StopImage">
+            <property name="width_request">421</property>
+            <property name="height_request">84</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Stop_Button.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">692</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="StartImage">
+            <property name="width_request">421</property>
+            <property name="height_request">84</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Start_Button.png</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">692</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="TimeLabel1">
+            <property name="width_request">29</property>
+            <property name="height_request">29</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">15:26</property>
+            <attributes>
+              <attribute name="font-desc" value="Segoe UI Bold 12"/>
+              <attribute name="weight" value="semibold"/>
+              <attribute name="foreground" value="#f3f3f3f3f3f3"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">60</property>
+            <property name="y">44</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="DateLabel1">
+            <property name="width_request">80</property>
+            <property name="height_request">26</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">14.01.20</property>
+            <attributes>
+              <attribute name="font-desc" value="Segoe UI Bold 12"/>
+              <attribute name="weight" value="semibold"/>
+              <attribute name="foreground" value="#f3f3f3f3f3f3"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">390</property>
+            <property name="y">44</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="RollTemp1">
+            <property name="width_request">179</property>
+            <property name="height_request">68</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">100</property>
+            <attributes>
+              <attribute name="font-desc" value="Segoe UI Bold 24"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">41</property>
+            <property name="y">133</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="RollTemp2">
+            <property name="width_request">179</property>
+            <property name="height_request">68</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">100</property>
+            <attributes>
+              <attribute name="font-desc" value="Segoe UI Bold 24"/>
+              <attribute name="weight" value="bold"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">261</property>
+            <property name="y">133</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="SetTempDisp1">
+            <property name="width_request">130</property>
+            <property name="height_request">68</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">30</property>
+            <attributes>
+              <attribute name="font-desc" value="Segoe UI Bold 24"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">41</property>
+            <property name="y">210</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="SetTempDisp2">
+            <property name="width_request">130</property>
+            <property name="height_request">68</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">30</property>
+            <attributes>
+              <attribute name="font-desc" value="Segoe UI Bold 24"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">261</property>
+            <property name="y">210</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="SpeedEntry">
+            <property name="width_request">179</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">60</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 30"/>
+              <attribute name="foreground" value="#cccc00000000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">385</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="MenuWindow">
+    <property name="width_request">480</property>
+    <property name="height_request">800</property>
+    <property name="can_focus">False</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="MenuWlayout">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="CalibrationSButton">
+            <property name="label" translatable="yes">Calibration</property>
+            <property name="width_request">361</property>
+            <property name="height_request">91</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_CalibrationSButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">63</property>
+            <property name="y">275</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="DeviceSButton">
+            <property name="label" translatable="yes">Device Status</property>
+            <property name="width_request">361</property>
+            <property name="height_request">91</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_DeviceSButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">63</property>
+            <property name="y">387</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="MenuExitButton">
+            <property name="label" translatable="yes">Exit</property>
+            <property name="width_request">169</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_MenuExitButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">242</property>
+            <property name="y">500</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Background2">
+            <property name="width_request">480</property>
+            <property name="height_request">800</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Settings_BG.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage" id="XLJetHeader2">
+            <property name="width_request">208</property>
+            <property name="height_request">59</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">XLJET_logo_Home.png</property>
+          </object>
+          <packing>
+            <property name="x">136</property>
+            <property name="y">18</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CalibrationBImage">
+            <property name="width_request">361</property>
+            <property name="height_request">91</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Calibration_Button.png</property>
+          </object>
+          <packing>
+            <property name="x">63</property>
+            <property name="y">275</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="DeviceStatusBImage">
+            <property name="width_request">361</property>
+            <property name="height_request">91</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Device_Status_Button.png</property>
+          </object>
+          <packing>
+            <property name="x">63</property>
+            <property name="y">387</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="MenuExitBImage">
+            <property name="width_request">169</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Exit_Setting_Button.png</property>
+          </object>
+          <packing>
+            <property name="x">242</property>
+            <property name="y">500</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="PasswordBlurWindow">
+    <property name="width_request">0</property>
+    <property name="height_request">0</property>
+    <property name="can_focus">False</property>
+    <property name="type">popup</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="PasswordBlurWlayout">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkImage" id="PasswordBlur">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Password_Blur.png</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="PasswordWindow">
+    <property name="width_request">480</property>
+    <property name="height_request">800</property>
+    <property name="can_focus">False</property>
+    <property name="type">popup</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="PasswordWlayout">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="Num1">
+            <property name="label" translatable="yes">1</property>
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_Num1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">77</property>
+            <property name="y">296</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Num2">
+            <property name="label" translatable="yes">2</property>
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_Num2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">184</property>
+            <property name="y">296</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Num3">
+            <property name="label" translatable="yes">3</property>
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_Num3_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">291</property>
+            <property name="y">296</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Num4">
+            <property name="label" translatable="yes">4</property>
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_Num4_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">77</property>
+            <property name="y">382</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Num5">
+            <property name="label" translatable="yes">5</property>
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_Num5_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">184</property>
+            <property name="y">382</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Num6">
+            <property name="label" translatable="yes">6</property>
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_Num6_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">291</property>
+            <property name="y">382</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Num7">
+            <property name="label" translatable="yes">7</property>
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_Num7_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">77</property>
+            <property name="y">468</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Num8">
+            <property name="label" translatable="yes">8</property>
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_Num8_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">184</property>
+            <property name="y">468</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Num9">
+            <property name="label" translatable="yes">9</property>
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_Num9_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">291</property>
+            <property name="y">468</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Num0">
+            <property name="label" translatable="yes">0</property>
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_Num0_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">184</property>
+            <property name="y">554</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="BackButton">
+            <property name="label" translatable="yes">back</property>
+            <property name="width_request">79</property>
+            <property name="height_request">92</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_BackButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">665</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="EnterButton">
+            <property name="label" translatable="yes">enter</property>
+            <property name="width_request">91</property>
+            <property name="height_request">92</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_EnterButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">291</property>
+            <property name="y">665</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Background5">
+            <property name="width_request">480</property>
+            <property name="height_request">800</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">NumberPad_BG.jpg</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage" id="XLJetHeader5">
+            <property name="width_request">208</property>
+            <property name="height_request">59</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">XLJET_logo_Home.png</property>
+          </object>
+          <packing>
+            <property name="x">136</property>
+            <property name="y">18</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="EnterPin">
+            <property name="width_request">208</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">EnterPin_Text.png</property>
+          </object>
+          <packing>
+            <property name="x">135</property>
+            <property name="y">140</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="PinEntryBox1">
+            <property name="width_request">55</property>
+            <property name="height_request">73</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">PinEntry_Box.png</property>
+          </object>
+          <packing>
+            <property name="x">90</property>
+            <property name="y">195</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="PinEntryBox2">
+            <property name="width_request">55</property>
+            <property name="height_request">73</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">PinEntry_Box.png</property>
+          </object>
+          <packing>
+            <property name="x">170</property>
+            <property name="y">195</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="PinEntryBox3">
+            <property name="width_request">55</property>
+            <property name="height_request">73</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">PinEntry_Box.png</property>
+          </object>
+          <packing>
+            <property name="x">250</property>
+            <property name="y">195</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="PinEntryBox4">
+            <property name="width_request">55</property>
+            <property name="height_request">73</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">PinEntry_Box.png</property>
+          </object>
+          <packing>
+            <property name="x">330</property>
+            <property name="y">195</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Dwn1">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">1_Dwn.png</property>
+          </object>
+          <packing>
+            <property name="x">77</property>
+            <property name="y">296</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Dwn2">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">2_Dwn.png</property>
+          </object>
+          <packing>
+            <property name="x">184</property>
+            <property name="y">296</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Dwn3">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">3_Dwn.png</property>
+          </object>
+          <packing>
+            <property name="x">291</property>
+            <property name="y">296</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Dwn4">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">4_Dwn.png</property>
+          </object>
+          <packing>
+            <property name="x">77</property>
+            <property name="y">382</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Dwn5">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">5_Dwn.png</property>
+          </object>
+          <packing>
+            <property name="x">184</property>
+            <property name="y">382</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Dwn6">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">6_Dwn.png</property>
+          </object>
+          <packing>
+            <property name="x">291</property>
+            <property name="y">382</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Dwn7">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">7_Dwn.png</property>
+          </object>
+          <packing>
+            <property name="x">77</property>
+            <property name="y">468</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Dwn8">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">8_Dwn.png</property>
+          </object>
+          <packing>
+            <property name="x">184</property>
+            <property name="y">468</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Dwn9">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">9_Dwn.png</property>
+          </object>
+          <packing>
+            <property name="x">291</property>
+            <property name="y">468</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Dwn0">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">0_Dwn.png</property>
+          </object>
+          <packing>
+            <property name="x">184</property>
+            <property name="y">554</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Up1">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">1_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">77</property>
+            <property name="y">296</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Up2">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">2_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">184</property>
+            <property name="y">296</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Up3">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">3_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">291</property>
+            <property name="y">296</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Up4">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">4_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">77</property>
+            <property name="y">382</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Up5">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">5_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">184</property>
+            <property name="y">382</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Up6">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">6_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">291</property>
+            <property name="y">382</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Up7">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">7_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">77</property>
+            <property name="y">468</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Up8">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">8_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">184</property>
+            <property name="y">468</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Up9">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">9_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">291</property>
+            <property name="y">468</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="Up0">
+            <property name="width_request">106</property>
+            <property name="height_request">85</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">0_Up.png</property>
+          </object>
+          <packing>
+            <property name="x">184</property>
+            <property name="y">554</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="BackImg">
+            <property name="width_request">79</property>
+            <property name="height_request">92</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Back.png</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">665</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="EnterImg">
+            <property name="width_request">91</property>
+            <property name="height_request">92</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Enter.png</property>
+          </object>
+          <packing>
+            <property name="x">291</property>
+            <property name="y">665</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="PinEntry1">
+            <property name="width_request">55</property>
+            <property name="height_request">73</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 20"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">90</property>
+            <property name="y">195</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="PinEntry2">
+            <property name="width_request">55</property>
+            <property name="height_request">73</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 20"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">170</property>
+            <property name="y">195</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="PinEntry3">
+            <property name="width_request">55</property>
+            <property name="height_request">73</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 20"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">250</property>
+            <property name="y">195</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="PinEntry4">
+            <property name="width_request">55</property>
+            <property name="height_request">73</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 20"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">330</property>
+            <property name="y">195</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="PwdCheckWindow">
+    <property name="can_focus">False</property>
+    <property name="type">popup</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="PwdCheckWlayout">
+        <property name="width_request">32</property>
+        <property name="height_request">32</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="PwdOKButton">
+            <property name="label" translatable="yes">OK</property>
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_PwdOKButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">135</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="WrongPin_BG">
+            <property name="width_request">397</property>
+            <property name="height_request">255</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">WrongPin_PopUp_Bg.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage" id="OkWrongBG">
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">OK_Button_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">135</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="Temp1">
+    <property name="width_request">397</property>
+    <property name="height_request">255</property>
+    <property name="can_focus">False</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="TempLayout1">
+        <property name="width_request">397</property>
+        <property name="height_request">255</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="TempPlusButton1">
+            <property name="label" translatable="yes">+</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempPlusButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="TempMinusButton1">
+            <property name="label" translatable="yes">-</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempMinusButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="TempOKButton1">
+            <property name="label" translatable="yes">OK</property>
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempOKButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="TempCancelButton1">
+            <property name="label" translatable="yes">button</property>
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempCancelButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="PopUpBG1">
+            <property name="width_request">397</property>
+            <property name="height_request">255</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">PopUp_BG.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage" id="RollerUpPopup1">
+            <property name="width_request">189</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">RollerUp_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">102</property>
+            <property name="y">27</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="SetTempPopup1">
+            <property name="width_request">198</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">SetTemp_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">58</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempMinusDown1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempMinusUp1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="DataBoxPopup1">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">DataBox_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempPlusDown1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempPlusUp1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="OKPopup1">
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">OK_Button_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CancelPopup1">
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">CancelButton_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="TempEntry1">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">30</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 24"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="Temp2">
+    <property name="width_request">397</property>
+    <property name="height_request">255</property>
+    <property name="can_focus">False</property>
+    <property name="type">popup</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="TempLayout2">
+        <property name="width_request">32</property>
+        <property name="height_request">32</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="TempPlusButton2">
+            <property name="label" translatable="yes">+</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempPlusButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="TempMinusButton2">
+            <property name="label" translatable="yes">-</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempMinusButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="TempOKButton2">
+            <property name="label" translatable="yes">OK</property>
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempOKButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="TempCancelButton2">
+            <property name="label" translatable="yes">button</property>
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempCancelButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="PopUpBG2">
+            <property name="width_request">397</property>
+            <property name="height_request">255</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">PopUp_BG.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage" id="RollerUpPopup2">
+            <property name="width_request">189</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">RollorDown_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">102</property>
+            <property name="y">27</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="SetTempPopup2">
+            <property name="width_request">198</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">SetTemp_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">58</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempMinusDown2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempMinusUp2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="DataBoxPopup2">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">DataBox_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempPlusDown2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempPlusUp2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="OKPopup2">
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">OK_Button_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="CancelPopup2">
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">CancelButton_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="TempEntry2">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">30</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 24"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="TempOffset1">
+    <property name="can_focus">False</property>
+    <property name="type">popup</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="type_hint">dialog</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="TempOffsetLayout1">
+        <property name="width_request">32</property>
+        <property name="height_request">32</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="TempOffsetMinusButton1">
+            <property name="label" translatable="yes">-</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempOffsetMinusButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="TempOffsetCancelButton1">
+            <property name="label" translatable="yes">button</property>
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempOffsetCancelButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="TempOffsetOKButton1">
+            <property name="label" translatable="yes">OK</property>
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempOffsetOKButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="TempOffsetPlusButton1">
+            <property name="label" translatable="yes">+</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempOffsetPlusButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetPopUpBG1">
+            <property name="width_request">397</property>
+            <property name="height_request">255</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">PopUp_BG.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetUp1">
+            <property name="width_request">189</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">RollerUp_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">102</property>
+            <property name="y">27</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetPop1">
+            <property name="width_request">198</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">TempOffset.png</property>
+          </object>
+          <packing>
+            <property name="x">75</property>
+            <property name="y">58</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetMinusDown1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetMinusUp1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetBox1">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">DataBox_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetPlusDown1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetPlusUp1">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetOK1">
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">OK_Button_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetCancel1">
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">CancelButton_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="TempOffsetEntry1">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">30</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 24"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="TempOffset2">
+    <property name="can_focus">False</property>
+    <property name="type">popup</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="type_hint">dialog</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <property name="gravity">static</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="TempOffsetLayout2">
+        <property name="width_request">32</property>
+        <property name="height_request">32</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="TempOffsetMinusButton2">
+            <property name="label" translatable="yes">-</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempOffsetMinusButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="TempOffsetCancelButton2">
+            <property name="label" translatable="yes">button</property>
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempOffsetCancelButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="TempOffsetOKButton2">
+            <property name="label" translatable="yes">OK</property>
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempOffsetOKButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="TempOffsetPlusButton2">
+            <property name="label" translatable="yes">+</property>
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_TempOffsetPlusButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetPopUpBG2">
+            <property name="width_request">397</property>
+            <property name="height_request">255</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">PopUp_BG.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetUp2">
+            <property name="width_request">189</property>
+            <property name="height_request">18</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">RollorDown_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">102</property>
+            <property name="y">27</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetPop2">
+            <property name="width_request">198</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">TempOffset.png</property>
+          </object>
+          <packing>
+            <property name="x">75</property>
+            <property name="y">58</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetMinusDown2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetMinusUp2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Minus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetBox2">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">DataBox_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetPlusDown2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Down_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetPlusUp2">
+            <property name="width_request">83</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">Plus_Up_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">278</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetOK2">
+            <property name="width_request">133</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">OK_Button_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="TempOffsetCancel2">
+            <property name="width_request">188</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">CancelButton_PopUp.png</property>
+          </object>
+          <packing>
+            <property name="x">179</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="TempOffsetEntry2">
+            <property name="width_request">170</property>
+            <property name="height_request">66</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">30</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 24"/>
+              <attribute name="foreground" value="#0000aeaeefef"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">86</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

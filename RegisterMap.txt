@@ -1,0 +1,27 @@
+typedef struct MODBUS_REGISTERS{
+    int16_t Set_Up_Temperature;			//1
+    int16_t Set_Down_Temperature;		//2
+    int16_t Motor_Speed_Percentage;		//3
+    int16_t Heater_ON_OFF_Up_Sensor;	//4
+    int16_t Heater_ON_OFF_Down_Sensor;	//5
+    int16_t Rod_Up_Down;				//6
+    int16_t Motor_Direction_Control;	//7
+    int16_t Motor_Start_Stop;			//8
+    int16_t Sensor_OffSet_1;			//9 ---Reading Calibration + - Offset point of Roller_1 Down side 
+    int16_t Sensor_OffSet_2;			//10---Reading Calibration + - Offset point of Roller_2 Up side 
+    int16_t Control_OffSet_1;			//11 0-200 ie 0-20 degree Celcius it is pre braking point from where the
+    int16_t Control_OffSet_2;			//12 heat reduces to a certain percentage.
+    int16_t Control_Output_Up_Sensor;	//13 This value is in percentage
+    int16_t Control_Output_Down_Sensor;	//14 10% to 100%
+    int16_t Laser_Enable_Reg;			//15
+	int16_t Laser_Output_Reg;			//16
+    int16_t Current_Up_Temperature;		//17
+    int16_t Ambient_Up_Temperature;		//18
+    int16_t Current_Down_Temperature;	//19
+    int16_t Ambient_Down_Temperature;	//20
+    int16_t Rod_Rotation_Pulses;		//21
+    int16_t Emergency_Switch_Input;		//22
+    int16_t NTC_Sensor_1_Status;		//23
+    int16_t NTC_Sensor_2_Status;		//24
+    int16_t System_Alarm;				//25
+}MODBUS_REGISTERS;
